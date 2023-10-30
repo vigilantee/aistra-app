@@ -27,6 +27,9 @@
                 font-weight: 500;
                 line-height: normal;
                 cursor: pointer;
+                &:hover{
+                    color: #FFB248;
+                }
             }
         }
         .header-btn-container {
