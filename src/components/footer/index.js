@@ -3,12 +3,14 @@ import "./footer.css"
 import { images } from "../images"
 
 const Footer = props => {
+    const {refAbout, refTeam} = props;
 
-    const handleClick = (val) => {
-        window.scrollTo({
-            top: val,
-            behavior: "smooth"
-        });
+    const handleAboutClick = () => {
+        refAbout.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    const handleTeamClick = () => {
+        refTeam.current?.scrollIntoView({ behavior: 'smooth' });
     }
 
     return (
@@ -21,8 +23,8 @@ const Footer = props => {
                     <div className="footer-content">
                         <div className="footer-header">Company</div>
                         <div className="footer-links" style={{ display: 'flex' }}>
-                            <div onClick={() => handleClick(850)} className="link-text">About us</div>
-                            <div className="link-text">Team</div>
+                            <div onClick={handleAboutClick} className="link-text">About us</div>
+                            <div onClick={handleTeamClick} className="link-text">Team</div>
                             <div className="link-text">Get in touch</div>
                         </div>
                     </div>

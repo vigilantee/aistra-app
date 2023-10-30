@@ -1,0 +1,33 @@
+.team-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #0E1118;
+    background: #000;
+    padding: 100px 80px;
+    row-gap: 60px;
+    .team-header{
+        color: var(--foundation-blue-new-blue-new-50, #E7EAF2);
+        text-align: center;
+        font-family: Lato;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .team-cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .team-container{
+        padding: 60px 16px;
+        .team-header{
+            font-size: 28px;
+        }
+    }
+}

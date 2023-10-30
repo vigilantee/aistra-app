@@ -3,7 +3,7 @@ import "./header.css"
 import { images } from "../images"
 
 const Header = props => {
-    const {refAbout, refProduct} = props;
+    const {refAbout, refProduct, refTeam} = props;
 
     const handleAboutClick = () => {
         refAbout.current?.scrollIntoView({ behavior: 'smooth' });
@@ -11,6 +11,10 @@ const Header = props => {
 
     const handleProductClick = () => {
         refProduct.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    const handleTeamClick = () => {
+        refTeam.current?.scrollIntoView({ behavior: 'smooth' });
     }
 
     return (
@@ -23,7 +27,7 @@ const Header = props => {
                     <div className="tab">Home</div>
                     <div onClick={() => handleAboutClick()} className="tab">About</div>
                     <div onClick={() => handleProductClick()} className="tab">Product</div>
-                    <div className="tab">Team</div>
+                    <div onClick={handleTeamClick} className="tab">Team</div>
                 </div>
                 <div className="header-btn-container" style={{ display: 'flex' }}>
                     <div className="career-tab">Careers</div>

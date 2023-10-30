@@ -11,9 +11,9 @@ const ProductCard = ({ imageUrl, header, description, knowMore }) => {
             <div className="card-content">
                 <h2 className="card-header">{header}</h2>
                 <div className="card-desc">{description}</div>
-                <a href={knowMore} target="_blank" rel="noopener noreferrer" className="know-more">
+                {knowMore && <a href={knowMore} target="_blank" rel="noopener noreferrer" className="know-more">
                     Know More
-                </a>
+                </a>}
             </div>
         </div>
     </div>

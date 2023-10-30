@@ -41,6 +41,7 @@ const Products = ({refs:ref}) => {
                 {cardData.map((card, index) => {
                     return(
                         <ProductCard 
+                            key={index}
                             header={card.header}
                             description={card.description}
                             imageUrl={card.imageUrl}
