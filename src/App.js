@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React, { useRef } from 'react';
 import './App.css';
+import Footer from './components/footer';
+import About from './pages/about';
+import Home from './pages/home';
+import Products from './pages/products';
+import Header from './components/header';
 
 function App() {
+  const refHome = useRef();
+  const refAbout = useRef();
+  const refProduct = useRef();
+
+  const HeaderComp = () => <Header refHome={refHome} refAbout={refAbout} refProduct={refProduct} />;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home Header={HeaderComp} refs={refHome} />
+      <About refs={refAbout} />
+      <Products refs={refProduct} />
+      <Footer />
     </div>
   );
 }

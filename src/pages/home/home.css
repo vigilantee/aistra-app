@@ -1,0 +1,31 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    .home-banner-container{
+        height: 780px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 250px;
+        padding-top: 10px;
+        align-items: center;
+        background-image: url('../../assets/png/top-banner.png');
+        .home-title{
+            color: var(--foundation-blue-new-blue-new-50, #E7EAF2);
+            font-family: Lato;
+            font-size: 120px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .home-container{
+        .home-banner-container{
+            .home-title{
+                font-size: 36px;
+            }
+        }
+    }
+}
