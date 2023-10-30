@@ -41,7 +41,7 @@ const Footer = props => {
                     <div className="footer-header">Contact Us</div>
                     <div className="footer-links" style={{ display: 'flex' }}>
                         <div className="email-text">info@aistra.com</div>
-                        <div className="link-text">307 Seventh Avenue Suite 1601, New York, NY 10001.</div>
+                        <div className="address">307 Seventh Avenue Suite 1601, New York, NY 10001.</div>
                     </div>
                 </div>
                 <div className="footer-content">
