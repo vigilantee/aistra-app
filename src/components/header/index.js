@@ -19,13 +19,13 @@ const Header = props => {
                 <img src={images['aistra-labs-logo.svg']} alt="Aistra Logo" />
             </div>
             <div className="hmenu">
-                <div className="tabs-container">
+                <div className="tabs-container" style={{ display: 'flex' }}>
                     <div className="tab">Home</div>
                     <div onClick={() => handleAboutClick()} className="tab">About</div>
                     <div onClick={() => handleProductClick()} className="tab">Product</div>
                     <div className="tab">Team</div>
                 </div>
-                <div className="header-btn-container">
+                <div className="header-btn-container" style={{ display: 'flex' }}>
                     <div className="career-tab">Careers</div>
                     <img className="get-started-btn" src={images['get-started-btn.svg']} alt="Get started" />
                 </div>
