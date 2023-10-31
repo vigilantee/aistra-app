@@ -3,7 +3,7 @@ import "./footer.css"
 import { images } from "../images"
 
 const Footer = props => {
-    const {refAbout, refTeam} = props;
+    const {refAbout, refTeam, refCareers} = props;
 
     const handleAboutClick = () => {
         refAbout.current?.scrollIntoView({ behavior: 'smooth' });
@@ -11,6 +11,10 @@ const Footer = props => {
 
     const handleTeamClick = () => {
         refTeam.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    const handleCareersClick = () => {
+        refCareers.current?.scrollIntoView({ behavior: 'smooth' });
     }
 
     return (
@@ -31,7 +35,7 @@ const Footer = props => {
                     <div className="footer-content">
                         <div className="footer-header">Useful Links</div>
                         <div className="footer-links" style={{ display: 'flex' }}>
-                            <div className="link-text">Careers</div>
+                            <div onClick={handleCareersClick} className="link-text">Careers</div>
                             <div className="link-text">Privacy Policy</div>
                             <div className="link-text">Terms and Conditions</div>
                         </div>
@@ -47,12 +51,12 @@ const Footer = props => {
                 <div className="footer-content">
                     <div className="footer-header">Find us on</div>
                     <div className="social-links" style={{ display: 'flex' }}>
-                        <div className="social-icon-container">
+                        <a href="https://twitter.com/AistraLabs" target="_blank" rel="noopener noreferrer" className="social-icon-container">
                             <img className="social-icon" src={images['twitter.svg']} alt="Twitter Logo" />
-                        </div>
-                        <div className="social-icon-container">
+                        </a>
+                        <a href="https://www.linkedin.com/company/aistra-labs/" target="_blank" rel="noopener noreferrer" className="social-icon-container">
                             <img className="social-icon" src={images['linkedin.svg']} alt="Linkedin Logo" />
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

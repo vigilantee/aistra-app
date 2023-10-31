@@ -1,0 +1,95 @@
+.careers-container{
+    display: flex;
+    height: 720px;
+    background: #0E1118;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    .careers-content{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        .careers-badge{
+            width: 133px;
+            height: 43px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            border: 1px solid var(--foundation-blue-new-blue-new-50, #E7EAF2);
+            color: var(--foundation-blue-new-blue-new-50, #E7EAF2);
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+        .careers-title{
+            margin-top: 48px;
+            color: var(--foundation-blue-new-blue-new-50, #E7EAF2);
+            font-family: Lato;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .careers-desc{
+            margin-top: 32px;
+            width: 816px;
+            text-align: left;
+            color: var(--foundation-blue-new-blue-new-100, #B4BFD6);
+            font-family: Open Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 180%;
+        }
+        .careers-btn-container{
+            margin-top: 64px;
+            width: 162px;
+            height: 48px;
+            cursor: pointer;
+            .btn-img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .careers-image-container{
+        width: 479.25px;
+        height: 720px;
+        .careers-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .careers-container{
+        flex-direction: column;
+        height: auto;
+        padding: 40px 26px;
+        row-gap: 40px;
+        .careers-content{
+            .careers-title{
+                font-size: 28px;
+                margin-top: 34px;
+            }
+            .careers-desc{
+                width: auto;
+                margin-top: 26px;
+            }
+            .careers-btn-container{
+                margin-top: 26px;
+            }
+        }
+        .careers-image-container{
+            width: 360px;
+            height: 360px;
+        }
+    }
+}

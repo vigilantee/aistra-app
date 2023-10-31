@@ -9,6 +9,7 @@
     .card-body{
         display: flex;
         column-gap: 28px;
+        justify-content: center;
         .image-container{
             width: 130px;
             height: 130px;
@@ -62,6 +63,8 @@
         height: auto;
         .card-body{
             flex-direction: column;
+            padding: 12px;
+            row-gap: 10px;
             .card-content{
                 .card-desc{
                     width: 300px;

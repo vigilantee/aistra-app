@@ -4,6 +4,7 @@
     .home-banner-container{
         height: 780px;
         display: flex;
+        justify-content: center;
         flex-direction: column;
         row-gap: 250px;
         padding-top: 10px;

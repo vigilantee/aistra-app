@@ -1,12 +1,11 @@
 import React, { memo } from "react";
 import "./home.css";
 
-const Home = ({Header}) => {
+const Home = ({refs:ref}) => {
 
   return (
-    <div className="home-container">
+    <div ref={ref} className="home-container">
         <div className="home-banner-container">
-            <Header />
             <div className="home-title">Making AI Work</div>
         </div>
     </div>

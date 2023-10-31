@@ -6,22 +6,24 @@ import Home from './pages/home';
 import Products from './pages/products';
 import Header from './components/header';
 import Team from './pages/team';
+import Careers from './pages/careers';
 
 function App() {
   const refHome = useRef();
   const refAbout = useRef();
   const refProduct = useRef();
   const refTeam = useRef();
-
-  const HeaderComp = () => <Header refHome={refHome} refAbout={refAbout} refProduct={refProduct} refTeam={refTeam} />;
+  const refCareers = useRef();
 
   return (
     <div className="App">
-      <Home Header={HeaderComp} refs={refHome} />
+      <Header refHome={refHome} refAbout={refAbout} refProduct={refProduct} refTeam={refTeam} refCareers={refCareers} />
+      <Home refs={refHome} />
       <About refs={refAbout} />
       <Products refs={refProduct} />
       <Team refs={refTeam} />
-      <Footer refAbout={refAbout} refTeam={refTeam} />
+      <Careers refs={refCareers} />
+      <Footer refAbout={refAbout} refTeam={refTeam} refCareers={refCareers} />
     </div>
   );
 }
