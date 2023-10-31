@@ -25,8 +25,8 @@ const Products = ({refs:ref}) => {
           knowMore: ""
         },
         {
-          header: "DeepTalk",
-          description: "Scalable and industry-specific Conversational AI enabling 50% or higher productivity improvement, 24x7 responsiveness, top-notch response quality, and multilingual capability for customer care and customer success.",
+          header: "FNA.AI",
+          description: "Fast and accurate microapps, virtual assistants, and managed services for accounting, reconciliations, tax advisory, audit support, ESG accounting, and compliance, aimed at both professional services providers and the CFO's office.",
           imageUrl: images['fni-logo.svg'],
           knowMore: ""
         },
